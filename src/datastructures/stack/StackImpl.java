@@ -1,45 +1,56 @@
 package datastructures.stack;
 
-import java.util.Stack;
+import java.util.ArrayList;
+import java.util.List;
 
 public class StackImpl {
+
+    private List<Integer> stackList;
+
     //constructor
+    public StackImpl(List<Integer> stackList) {
+        this.stackList = stackList;
+    }
 
     //push
-    public void pushStack(Stack<Integer> stack, int value) {
-        stack.push(value);
+    public void pushStack(int value) {
+        stackList.add(value);
     }
 
     //pop
-    public int popStack(Stack<Integer> stack, int value) {
-        return stack.pop();
+    public Integer popStack() {
+        if (stackList.size() > 0) {
+            int top = stackList.get(stackList.size() - 1);
+            stackList.remove(stackList.size() - 1);
+            System.out.println("top is :: " + top);
+            return top;
+        }
+        return null;
     }
 
     //peek
-    public int peekStack(Stack<Integer> stack) {
-        return stack.peek();
+    public Integer peekStack() {
+        if (stackList.size() > 0) {
+            return stackList.get(stackList.size() - 1);
+        }
+        return null;
     }
 
     //search
-    public int searchStack(Stack<Integer> stack, int pos) {
-        return stack.search(pos);
+    public int searchStack(int pos) {
+        return stackList.get(pos);
     }
-    //test
 
+    //test
     public static void main(String ar[]) {
-        Stack<Integer> stack = new Stack<>();
+        StackImpl stackImpl = new StackImpl(new ArrayList<>());
         // push
         for (int i = 0; i < 10; i++) {
-            stack.push(i);
+            stackImpl.pushStack(i);
         }
-//        System.out.println(stack.pop());
-        //peek
-        for (int i : stack) {
-            System.out.println(stack.peek());
-        }
-
-        while (stack.size() > 0) {
-            System.out.println(stack.pop());
+        // pop
+        for (int i = 0; i < stackImpl.stackList.size(); i++) {
+            stackImpl.popStack();
         }
     }
 }
