@@ -1,4 +1,4 @@
-package patterns.behaviouralPatterns.decoratorPattern;
+package patterns.structuralPatterns.decoratorPattern;
 
 public class CarDecorator implements Car {
     protected Car car;
@@ -9,6 +9,6 @@ public class CarDecorator implements Car {
 
     @Override
     public void assemble() {
-
+        System.out.println("assembled " + this.car);
     }
 }

@@ -1,4 +1,4 @@
-package patterns.behaviouralPatterns.decoratorPattern;
+package patterns.structuralPatterns.decoratorPattern;
 
 public class LuxuryCar extends CarDecorator {
     public LuxuryCar(Car car) {

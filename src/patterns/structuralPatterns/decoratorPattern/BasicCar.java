@@ -1,4 +1,4 @@
-package patterns.behaviouralPatterns.decoratorPattern;
+package patterns.structuralPatterns.decoratorPattern;
 
 public class BasicCar implements Car {
 
