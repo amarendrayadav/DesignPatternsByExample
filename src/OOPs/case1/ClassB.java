@@ -1,6 +1,7 @@
-package patterns.OOPs.case2;
+package OOPs.case1;
 
 public class ClassB extends ClassA {
+
     public void testMessage() {
         System.out.println("Class B");
     }

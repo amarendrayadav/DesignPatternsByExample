@@ -1,4 +1,4 @@
-package patterns.OOPs.case2;
+package OOPs.case2;
 
 public class ClassA extends AbsClassA {
     @Override

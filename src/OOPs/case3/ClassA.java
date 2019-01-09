@@ -1,4 +1,4 @@
-package patterns.OOPs.case3;
+package OOPs.case3;
 
 public class ClassA {
     public void m1() throws ArrayIndexOutOfBoundsException {

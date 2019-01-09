@@ -1,4 +1,4 @@
-package patterns.OOPs.case3;
+package OOPs.case3;
 
 public class TestCase3 {
     public static void main(String[] args) {

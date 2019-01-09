@@ -1,4 +1,4 @@
-package patterns.OOPs.case1;
+package OOPs.case1;
 
 public class ClassA {
     public void testMessage() {
